@@ -77,8 +77,7 @@ export default class NodeCryptoDriver implements CryptoInterface {
           .verify(
             {
               key: pem,
-              padding: constants.RSA_PKCS1_PSS_PADDING,
-              saltLength: 0
+              padding: constants.RSA_PKCS1_PSS_PADDING
             },
             signature
           )
